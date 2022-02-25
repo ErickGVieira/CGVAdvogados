@@ -1,0 +1,6 @@
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Dominio\bin\Debug\Dominio.dll
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Dominio\bin\Debug\Dominio.pdb
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Dominio\obj\Debug\Dominio.dll
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Dominio\obj\Debug\Dominio.pdb
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache

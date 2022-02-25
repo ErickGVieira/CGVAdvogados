@@ -1,0 +1,10 @@
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\bin\Debug\Repositorio.dll.config
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\bin\Debug\Dominio.dll
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\bin\Debug\Dominio.pdb
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\obj\Debug\Repositorio.csprojAssemblyReference.cache
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\obj\Debug\Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\obj\Debug\Repositorio.csproj.CopyComplete
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\erick\OneDrive\Documentos\Projetos\Cgvadvogados\CgvAdvogados\Repositorio\obj\Debug\Repositorio.pdb

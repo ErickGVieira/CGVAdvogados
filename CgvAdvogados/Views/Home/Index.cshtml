@@ -1,0 +1,118 @@
+﻿@using CgvAdvogados.ViewModels;
+@model AdvogadoViewModel
+
+@{
+    ViewBag.Title = "CGV Advogados";
+}
+
+<div class="jumbotron">
+    <h1>CGV Advogados</h1>
+    <h3>Lista de Advogados</h3>
+
+    <p>
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#adicionar">
+            Adicionar
+        </button>
+    </p>
+
+    <table class="table table-bordered table-responsive table-hover">
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Senioridade</th>
+            <th>Endereco</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model.advogados)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.id)</td>
+                <td>@Html.DisplayFor(modelItem => item.nome)</td>
+                <td>@Html.DisplayFor(modelItem => item.senioridade)</td>
+                <td>@Html.DisplayFor(modelItem => item.endereco)</td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-id="@item.id" data-target="#adicionar">Editar</button>
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-id="@item.id" data-target="#adicionar">Remover</button>
+                </td>
+            </tr>
+        }
+    </table>
+
+
+    <div class="modal fade" tabindex="-1" id="adicionar" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Cadastro de Advogado</h4>
+                </div>
+                @using (Html.BeginForm("IncluirAdvogado", "Home", FormMethod.Post))
+                {
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label for="inputNome">Nome: </label>
+                                @Html.TextBoxFor(model => model.nome, new { htmlAttributes = new { @class = "form-control", @type = "text" } }) <br />
+                                @Html.ValidationMessageFor(model => model.nome, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label for="inputNome">Sernioridade: </label>
+                                @Html.TextBoxFor(model => model.senioridade, new { htmlAttributes = new { @class = "form-control", @type = "text" } }) <br />
+                                @Html.ValidationMessageFor(model => model.senioridade, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label for="inputNome">Endereço: </label>
+                                @Html.TextBoxFor(model => model.endereco, new { htmlAttributes = new { @class = "form-control", @type = "text" } }) <br />
+                                @Html.ValidationMessageFor(model => model.endereco, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="submit" type="submit" value="submit" class="btn btn-success">Adicionar</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="remover" data-keyboard="false" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Cadastro de Advogado</h4>
+                </div>
+                @using (Html.BeginForm("ExcluirAdvogado", "Home", FormMethod.Post))
+                {
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label for="inputNome">Nome: </label>
+                                @Html.LabelFor(model => model.nome, new { htmlAttributes = new { @class = "form-control", @type = "text" } }) <br />
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label for="inputNome">Sernioridade: </label>
+                                @Html.LabelFor(model => model.senioridade, new { htmlAttributes = new { @class = "form-control", @type = "text" } }) <br />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-lg-5">
+                                <label for="inputNome">Endereço: </label>
+                                @Html.LabelFor(model => model.endereco, new { htmlAttributes = new { @class = "form-control", @type = "text" } }) <br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button id="submit" type="submit" value="submit" class="btn btn-success">Excluir</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
